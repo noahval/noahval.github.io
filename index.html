@@ -16,13 +16,49 @@
             background-size: cover;
             background-position: top;
             background-repeat: no-repeat;
+			
+			
+.thumbs-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.thumbs-up-btn {
+    font-size: 1em;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.counter {
+    font-size: 2em;
+    color: #00CFFF;
+    margin-left: 10px;
+}
+			
+			
+			
     </style>
 </head>
 <body>
+
+
 <iframe 
     class="chart-iframe"
 width="100%" height="943" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSfjtTToDTzfI-RLmiWLwg7p3TKOexBr8mlggaj_3U5gjLOmLe7CWxXTpShE7sRRzYMueRYTt94pkli/pubchart?oid=722362073&amp;format=interactive"
    allowfullscreen
 ></iframe>
+
+    <div class="thumbs-container">
+        <button class="thumbs-up-btn" onclick="incrementCounter()">Send Adaniere a 👍</button>
+        <span class="counter" id="thumbsCounter">0</span>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
 </body>
 </html>
